@@ -11,7 +11,7 @@ class MainWindow(QTabWidget):
     def __init__(self):
         super().__init__()
         self.setWindowIcon(QIcon('images/logo.png'))
-        self.setWindowTitle('实时垃圾智能分类系统_宋清皓_22121294')
+        self.setWindowTitle('实时垃圾智能分类系统')
         self.model = tf.keras.models.load_model("models/mobilenet.h5")  # 模型路径
         self.class_names = ['其他垃圾_PE塑料袋', '其他垃圾_U型回形针', '其他垃圾_一次性杯子', '其他垃圾_一次性棉签',
                             '其他垃圾_串串竹签', '其他垃圾_便利贴', '其他垃圾_创可贴',
